@@ -36,7 +36,11 @@ class Owner
   
   def buy_dog(name)
     Dog.new(name, self)
-  end 
+  end
+  
+  def walk_dogs
+    Dogs.all.collect {|dog| dog.mood = "happy"}
+  end
     
   def self.all 
     @@all
