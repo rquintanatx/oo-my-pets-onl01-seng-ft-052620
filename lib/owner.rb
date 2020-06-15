@@ -39,7 +39,7 @@ class Owner
   end
   
   def walk_dogs
-    Dogs.all.collect {|dog| dog.mood = "happy"}
+    Dog.all.collect {|dog| dog.mood = "happy"}
   end
     
   def self.all 
