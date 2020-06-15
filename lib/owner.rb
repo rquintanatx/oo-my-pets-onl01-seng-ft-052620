@@ -49,8 +49,8 @@ class Owner
   def sell_pets
     Cat.all.collect {|cat| cat.mood = "nervous"}
     Dog.all.collect {|dog| dog.mood = "nervous"}
-    Dog.all.select {|dog| dog.owner == nil}
-    Cat.all.select {|cat| cat.owner == nil}
+    Dog.all.collect {|dog| dog.owner = nil}
+    Cat.all.collect {|cat| cat.owner = nil}
   end 
   
   def self.all 
