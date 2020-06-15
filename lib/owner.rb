@@ -1,3 +1,5 @@
+require 'pry'
+
 class Owner
   attr_accessor
   @@all = []
@@ -29,6 +31,7 @@ class Owner
   end 
   
   def buy_cat(name)
+    binding.pry
     new_cat = Cat.all.detect {|cat| cat.name == name}  
     new_cat.owner = self
   end 
