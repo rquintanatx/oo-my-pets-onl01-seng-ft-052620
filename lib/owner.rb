@@ -32,7 +32,7 @@ class Owner
   
   def buy_cat(name)
     binding.pry
-    new_cat = Cat.all. {|cat| cat.name == name}  
+    new_cat =   
     new_cat.owner = self
   end 
     
