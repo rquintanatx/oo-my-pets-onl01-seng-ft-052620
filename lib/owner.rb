@@ -46,6 +46,10 @@ class Owner
     Cat.all.collect {|cat| cat.mood = "happy"}
   end 
   
+  def sell_pets
+    
+  end 
+  
   def self.all 
     @@all
   end
