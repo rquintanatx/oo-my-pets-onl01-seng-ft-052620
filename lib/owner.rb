@@ -31,9 +31,7 @@ class Owner
   end 
   
   def buy_cat(name)
-    binding.pry
-    new_cat =   
-    new_cat.owner = self
+    
   end 
     
   def self.all 
